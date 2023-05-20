@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casa De La Pica | Products</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">    
+ 
+ <style>
+        body {
+            background-color: #FFFAEB;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        header {
+            background-color: #C58C7B;
+            color: #FFFFFF;
+            font-weight: 500;
+            height: 35px;
+            padding-top: 7px;
+            font-size: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            }
+
+          li{
+            float: left;
+
+        }
+
+          li a{
+            font-weight: 500;
+            display: block;
+            color: #946F50;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none; 
+        }
+
+        nav {
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.02) 0px 4px 6px -2px;
+          border-radius: 10px;
+        }
+
+        .navbar-brand {
+            margin-left: 20px;
+        }
+
+        .nav-link{
+          font-size: 17px;
+        font-weight: 500;
+        color: #946F50;
+        position: relative;
+        text-decoration: none;
+
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #C58C7B;
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-out;
+        transform: scaleX(0);
+      }
+
+      .nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .text-center {
+        color: #000;
+       }
+
+       .navbar-toggler {
+          border: 2px solid #000;
+        }
+
+        span {
+          padding-top: 5px;
+        }
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+          color: #946F50;
+          font-size: 30px;
+          text-align: left;
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+
+        h3 {
+          font-family: 'Lora', serif;
+          font-weight: bolder;
+          font-style: italic;
+          color: #58382d;
+          font-size: 25px;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        .card {
+          margin-right: 50px;
+          background-color: transparent;
+          border-color: transparent;
+        }
+
+        .card-group {
+          text-align: center;
+          position: relative;
+          margin-left: 35px;
+          margin-bottom: 50px;
+        }
+
+        h5 {
+          font-weight: 700;
+          color: #946F50;
+        }
+
+        img {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .2s ease-in-out;
+          transition: .2s ease-in-out;
+
+        }
+
+        img:hover {
+          -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+        }    
+
+        .card-text {
+          font-size: 20px;
+          -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #946F50;
+        }
+
+        h4 {
+          font-family: 'Lora', serif;
+          font-weight: bolder;
+          font-style: italic;
+          color: #C58C7B;
+          font-size: 35px;
+          text-align: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        hr {
+          color: #946F50;
+        }
+
+        .row {
+          text-align: center;
+        }
+
+        #cart {
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+ h6 {
+        margin-left: 50px;
+        margin-top: 10px;
+        color: #E55A90;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+ }
+
+ th {
+  border: 2px solid #946F50;
+ }
+
+ td {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+ }
+
+#cart1 {
+  font-weight: 500;
+}
+
+#forms {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: small;
+  width: 70%;
+  background-color: transparent;
+    border: solid;
+    border-top: 8px #e49f8a solid;
+    border-left: #e49f8a solid;
+    border-bottom: 8px #5c4532 solid;
+    border-right: #5c4532 solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.add {
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.4) 0px -2px 6px 0px inset;
+        background-color: transparent;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid #946F50;
+        outline: none;
+        border-radius: 20px;
+        padding: 3px 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        color: #000;
+        transition: 0.1s;
+        text-decoration: none;
+}
+
+.add:active {
+  box-shadow: 0 0 #000000;
+        transform: translateY(2px);
+        text-decoration: none;
+}
+
+.add:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #946F50;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border: 3px solid #946F50;
+        outline: none;
+        border-radius: 20px;
+        padding: 3px 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        color: #FFFAEB;
+        transition: 0.1s;
+        text-decoration: none;
+}
+
+  </style>
+
+  
+  </head>
+  <body class="container-fluid m-0 p-0">
+    <header>
+      We deliver <span style="font-style: italic;">worldwide, free of charges.</span>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="cdlp.png" alt="Logo" width="120" class="d-inline-block align-text-center"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">☰</span>
+        </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+             </ul>
+           </div>
+          </div>
+        </nav>
+    <h3>Clothes:</h3>
+        <!--Products-->
+    <div class="container">
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+               <img src="product1.png" class="card-img-top" alt="item1" style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+               <div class="card-body">
+                 <h5 class="card-title title" style="font-weight:700;">Tommy Hilfiger Harrington Windbreaker Jacket</h5>
+                 <p class="card-text price">Php 800</p>
+                 <button type="button" class="add" onclick="addToCart('product1')">Add to Heart</button>
+               </div>
+           </div>
+          
+            <div class="card" style="width: 18rem;">
+            <img src="product2.png" class="card-img-top" alt="item2"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+            <div class="card-body">
+              <h5 class="card-title">Gucci Chunky-Knit <br> Wool Jumper</h5>
+              <p class="card-text">Php 1000</p>
+              <button type="button" class="add" onclick="addToCart('product2')">Add to Heart</button>
+            </div>
+        </div>
+          
+          <div class="card" style="width: 18rem;">
+          <img src="product3.png" class="card-img-top" alt="item3"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+          <div class="card-body">
+            <h5 class="card-title">Gucci Silk <br>Blouse</h5>
+            <p class="card-text">Php 900</p>
+            <button type="button" class="add" onclick="addToCart('product3')">Add to Heart</button>
+          </div>
+      </div>          
+        </div>
+
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+               <img src="product4.png" class="card-img-top" alt="item4" style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+               <div class="card-body">
+                 <h5 class="card-title">Chanel Classic <br>Tweed Jacket</h5>
+                 <p class="card-text">Php 100</p>
+                 <button type="button" class="add" onclick="addToCart('product4')">Add to Heart</button>
+               </div>
+           </div>
+          
+            <div class="card" style="width: 18rem;">
+            <img src="product5.png" class="card-img-top" alt="item5"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+            <div class="card-body">
+              <h5 class="card-title">Tommy Hilfiger Vintage Denim Shorts</h5>
+              <p class="card-text">Php 400</p>
+              <button type="button" class="add" onclick="addToCart('product5')">Add to Heart</button>
+            </div>
+        </div>
+          
+          <div class="card" style="width: 18rem;">
+          <img src="product6.png" class="card-img-top" alt="item6"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+          <div class="card-body">
+            <h5 class="card-title">Alexander Mcqueen <br>Silk Corset Top </h5>
+            <p class="card-text">Php 500</p>
+            <button type="button" class="add" onclick="addToCart('product6')">Add to Heart</button>
+          </div>
+      </div>          
+        </div>
+      </div>
+
+      <!--s&b-->
+      <div class="container">
+      <h3 class="category" style="margin-left: auto; margin-right: auto;">Shoes & Bags:</h3>
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+             <img src="product7.png" class="card-img-top" alt="item7"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 5px;">
+             <div class="card-body">
+               <h5 class="card-title title" style="font-weight:700;">Prada Hobo Bag</h5>
+               <p class="card-text price">Php 2000</p>
+               <button type="button" class="add" onclick="addToCart('product7')">Add to Heart</button>
+             </div>
+         </div>
+        
+          <div class="card" style="width: 18rem;">
+          <img src="product8.png" class="card-img-top" alt="item8"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+          <div class="card-body">
+            <h5 class="card-title">Loafers</h5>
+            <p class="card-text">Php 200</p>
+            <button type="button" class="add" onclick="addToCart('product8')">Add to Heart</button>
+          </div>
+      </div>
+        
+        <div class="card" style="width: 18rem;">
+        <img src="product9.png" class="card-img-top" alt="item9"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+        <div class="card-body">
+          <h5 class="card-title">New Balance 530 Sneakers</h5>
+          <p class="card-text">Php 1500</p>
+          <button type="button" class="add" onclick="addToCart('product9')">Add to Heart</button>
+        </div>
+    </div>          
+      </div>
+
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+             <img src="product10.png" class="card-img-top" alt="item10" style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+             <div class="card-body">
+               <h5 class="card-title">Combat Boots</h5>
+               <p class="card-text">Php 400</p>
+               <button type="button" class="add" onclick="addToCart('product10')">Add to Heart</button>
+             </div>
+         </div>
+        
+          <div class="card" style="width: 18rem;">
+          <img src="product11.png" class="card-img-top" alt="item11"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+          <div class="card-body">
+            <h5 class="card-title">Dior Saddle Bag</h5>
+            <p class="card-text">Php 2500</p>
+            <button type="button" class="add" onclick="addToCart('product11')">Add to Heart</button>
+          </div>
+      </div>
+        
+        <div class="card" style="width: 18rem;">
+        <img src="product12.png" class="card-img-top" alt="item12"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 40px; padding: 8px;">
+        <div class="card-body">
+          <h5 class="card-title">Louis Vuitton damier ebene pochette accessoires</h5>
+          <p class="card-text">Php 2000</p>
+          <button type="button" class="add" onclick="addToCart('product12')">Add to Heart</button>
+        </div>
+    </div>          
+      </div>
+    </div>
+
+    <!--Pride-->
+    <div class="container">
+    <h3 class="category" style="margin-left: auto; margin-right: auto;">Vinyls:</h3>
+    <div class="card-group">
+      <div class="card" style="width: 18rem;">
+           <img src="product13.png" class="card-img-top" alt="item13"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 5px;">
+           <div class="card-body">
+             <h5 class="card-title title" style="font-weight:700;">Speak Now</h5>
+             <p class="card-text price">Php 350</p>
+             <button type="button" class="add" onclick="addToCart('product13')">Add to Heart</button>
+           </div>
+       </div>
+      
+        <div class="card" style="width: 18rem;">
+        <img src="product14.png" class="card-img-top" alt="item14"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+        <div class="card-body">
+          <h5 class="card-title">Gold</h5>
+          <p class="card-text">Php 150</p>
+          <button type="button" class="add" onclick="addToCart('product14')">Add to Heart</button>
+        </div>
+    </div>
+      
+      <div class="card" style="width: 18rem;">
+      <img src="product15.png" class="card-img-top" alt="item15"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+      <div class="card-body">
+        <h5 class="card-title">Collected</h5>
+        <p class="card-text">Php 150</p>
+        <button type="button" class="add" onclick="addToCart('product15')">Add to Heart</button>
+      </div>
+  </div>          
+    </div>
+
+    <div class="card-group">
+      <div class="card" style="width: 18rem;">
+           <img src="product16.png" class="card-img-top" alt="item16"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+           <div class="card-body">
+             <h5 class="card-title">HELP!</h5>
+             <p class="card-text">Php 200</p>
+             <button type="button" class="add" onclick="addToCart('product16')">Add to Heart</button>
+           </div>
+       </div>
+      
+        <div class="card" style="width: 18rem;">
+        <img src="product17.png" class="card-img-top" alt="item17"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+        <div class="card-body">
+          <h5 class="card-title">The Voice</h5>
+          <p class="card-text">Php 100</p>
+          <button type="button" class="add" onclick="addToCart('product17')">Add to Heart</button>
+        </div>
+    </div>
+      
+      <div class="card" style="width: 18rem;">
+      <img src="product18.png" class="card-img-top" alt="item12"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+      <div class="card-body">
+        <h5 class="card-title">blonde</h5>
+        <p class="card-text">Php 200</p>
+        <button type="button" class="add" onclick="addToCart('product18')">Add to Heart</button>
+      </div>
+  </div>          
+    </div>
+  </div>
+
+  <div class="container">
+  <h3 class="category" style="margin-left: auto; margin-right: auto;;">Pride Collection:</h3>
+  <div class="container">
+  <div class="card-group">
+    <div class="card" style="width: 18rem;">
+         <img src="product19.png" class="card-img-top" alt="item19"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 5px;">
+         <div class="card-body">
+           <h5 class="card-title title" style="font-weight:700;">Raibow Pride Pin</h5>
+           <p class="card-text price">Php 50</p>
+           <button type="button" class="add" onclick="addToCart('product19')">Add to Heart</button>
+         </div>
+     </div>
+    
+      <div class="card" style="width: 18rem;">
+      <img src="product20.png" class="card-img-top" alt="item20"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+      <div class="card-body">
+        <h5 class="card-title">Pride Frog Necklace</h5>
+        <p class="card-text">Php 40</p>
+        <button type="button" class="add" onclick="addToCart('product20')">Add to Heart</button>
+      </div>
+  </div>
+    
+    <div class="card" style="width: 18rem;">
+    <img src="product21.png" class="card-img-top" alt="item21"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 8px;">
+    <div class="card-body">
+      <h5 class="card-title">Flag Enamel Pins Pack</h5>
+      <p class="card-text">Php 200</p>
+      <button type="button" class="add" onclick="addToCart('product21')">Add to Heart</button>
+    </div>
+</div>          
+  </div>
+
+  <div class="card-group">
+    <div class="card" style="width: 18rem;">
+         <img src="product22.png" class="card-img-top" alt="item22"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 3px;">
+         <div class="card-body">
+           <h5 class="card-title">Tote Bag (1)</h5>
+           <p class="card-text">Php 150</p>
+           <button type="button" class="add" onclick="addToCart('product22')">Add to Heart</button>
+         </div>
+     </div>
+    
+      <div class="card" style="width: 18rem;">
+      <img src="product23.png" class="card-img-top" alt="item23"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 0px;">
+      <div class="card-body">
+        <h5 class="card-title">Tote Bag (2)</h5>
+        <p class="card-text">Php 150</p>
+        <button type="button" class="add" onclick="addToCart('product23')">Add to Heart</button>
+      </div>
+  </div>
+    
+    <div class="card" style="width: 18rem;">
+    <img src="product24.png" class="card-img-top" alt="item24"  style="width:250px; margin-left: auto; margin-right: auto; border: 2.5px solid #C58C7B; border-radius: 1200px; padding: 0px;">
+    <div class="card-body">
+      <h5 class="card-title">Tote Bag (3)</h5>
+      <p class="card-text">Php 150</p>
+      <button type="button" class="add" onclick="addToCart('product24')">Add to Heart</button>
+    </div>
+</div>          
+  </div>
+</div>
+
+      <!--Orders-->
+      <div class="container">        
+        <h6 class="cart1" style="margin-left: auto; margin-right: auto; color: #C58C7B;">Your <span style="color: #946F50;">Cart</span> <i class="uil uil-shopping-cart"></i></h6>
+              <div class="container" id="cart">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider" id="product-cart">
+          </tbody>
+        </table>
+      <!--total-->
+      <h3 id="total">Total: Php 0.00</h3>
+    </div>
+      </div>
+    </div> 
+
+    <div class="container" id="forms">
+    <h1>Delivery Details</h1>
+    <form action = http://sirjm.infinityfreeapp.com/checkout.php method="get" class="container">
+        Name: <input type="text" name="cust_name" placeholder="Surname, First Name" class="form-control" required> <br>
+        Email Address: <input type="text" name="cust_email" placeholder="salamatshaur@pie" class="form-control" required> <br>
+        Delivery Address: <input type="text" name="cust_addr" placeholder="Sa Puso Mo Subdivision" class="form-control" required> <br>
+        <input type="submit" value="Place Order" class="add">
+        <input type="hidden" id="hart" name="cust_order">
+
+    </form>
+  </div>
+    <script>
+      const producks = {
+        product1 : {
+          "prod_name":"Tommy Hilfiger Harrington Windbreaker Jacket",
+          "prod_price" : "800"
+        },
+        product2 : {
+          "prod_name" : "Gucci Chunky-Knit Wool Jumper",
+          "prod_price" : "1000"
+        },
+        product3 : {
+          "prod_name" : "Gucci Silk Blouse",
+          "prod_price" : "900"
+        },
+        product4 : {
+          "prod_name" : "Chanel Classic Tweed Jacket",
+          "prod_price" : "100"
+        },
+        product5 : {
+          "prod_name" : "Tommy Hilfiger Vintage Denim Shorts",
+          "prod_price" : "400"
+        },
+        product6 : {
+          "prod_name" : "Alexander Mcqueen Silk Corset Top",
+          "prod_price" : "500"
+        },
+        product7 : {
+          "prod_name" : "Prada Hobo Bag",
+          "prod_price" : "2000"
+        },
+        product8 : {
+          "prod_name" : "Loafers",
+          "prod_price" : "200"
+        },
+        product9 : {
+          "prod_name" : "New Balance 530 Sneakers",
+          "prod_price" : "2500"
+        },
+        product10 : {
+          "prod_name" : "Combat Boots",
+          "prod_price" : "400"
+        },
+        product11 : {
+          "prod_name" : "Dior Saddle Bag",
+          "prod_price" : "2500"
+        },
+        product12 : {
+          "prod_name" : "Louis Vuitton damier ebene pochette accessoires",
+          "prod_price" : "2000"
+        },
+        product13 : {
+          "prod_name" : "Speak Now",
+          "prod_price" : "350"
+        },
+        product14 : {
+          "prod_name" : "Gold",
+          "prod_price" : "150"
+        },
+        product15 : {
+          "prod_name" : "Collected",
+          "prod_price" : "150"
+        },
+        product16 : {
+          "prod_name" : "HELP!",
+          "prod_price" : "200"
+        },
+        product17 : {
+          "prod_name" : "The Voice",
+          "prod_price" : "100"
+        },
+        product18 : {
+          "prod_name" : "Blonde",
+          "prod_price" : "200"
+        },
+        product19 : {
+          "prod_name" : "Raibow Pride Pin",
+          "prod_price" : "50"
+        },
+        product20 : {
+          "prod_name" : "Pride Frog Necklace",
+          "prod_price" : "40"
+        },
+        product21 : {
+          "prod_name" : "Flag Enamel Pins Pack",
+          "prod_price" : "200"
+        },
+        product22 : {
+          "prod_name" : "Tote Bag (1)",
+          "prod_price" : "150"
+        },
+        product23 : {
+          "prod_name" : "Tote Bag (2)",
+          "prod_price" : "150"
+        },
+        product24 : {
+          "prod_name" : "Tote Bag (3)",
+          "prod_price" : "150"
+        },
+      }
+
+      let total = 0;
+      let cart = [];
+            function addToCart(order){
+                const table = document.getElementById("product-cart");
+                const row = table.insertRow(0);
+                const name = row.insertCell(0);
+                const cost = row.insertCell(1);
+                const trash = row.insertCell(2);
+
+                const totalText = document.getElementById("total");
+
+                name.innerHTML = producks[order].prod_name;
+                cost.innerHTML = producks[order].prod_price;
+                trash.innerHTML ='<button class="add" onclick="deleteRow(event)">Delete</button>';
+
+                total += parseInt(producks[order].prod_price);
+                totalText.innerHTML = `Total: Php ${total}.00`;
+
+                const cust_order = document.getElementById("cust_order");
+                cust_order.value = JSON.stringify(cart);
+              }
+            function deleteRow(event) {
+                var i = event.target.parentNode.parentNode.rowIndex;
+                var byebye = event.rowIndex
+                var minusprice = document.getElementById("product-cart").rows[i - 1].cells[1].innerHTML;
+                total -= parseInt(minusprice);
+                document.getElementById("total").innerHTML = `Total: Php ${total}.00`;
+                document.getElementById("product-cart").deleteRow(i-1);
+                cart.splice(byebye, 1);
+                }
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>
